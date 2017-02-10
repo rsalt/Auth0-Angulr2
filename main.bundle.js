@@ -300,6 +300,11 @@ var AppModule = (function () {
 var appRoute = [
     {
         path: '',
+        redirectTo: 'Auth0-Angulr2/',
+        pathMatch: 'full'
+    },
+    {
+        path: 'Auth0-Angulr2',
         component: __WEBPACK_IMPORTED_MODULE_1__component_home_home_component__["a" /* HomeComponent */]
     },
     {
