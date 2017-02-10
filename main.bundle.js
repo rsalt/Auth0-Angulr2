@@ -304,7 +304,7 @@ var appRoute = [
         pathMatch: 'full'
     },
     {
-        path: 'Auth0-Angulr2',
+        path: '',
         component: __WEBPACK_IMPORTED_MODULE_1__component_home_home_component__["a" /* HomeComponent */]
     },
     {
