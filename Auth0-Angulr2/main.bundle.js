@@ -300,15 +300,10 @@ var AppModule = (function () {
 var appRoute = [
     {
         path: '',
-        redirectTo: 'Auth0-Angulr2/',
-        pathMatch: 'full'
-    },
-    {
-        path: 'Auth0-Angulr2',
         component: __WEBPACK_IMPORTED_MODULE_1__component_home_home_component__["a" /* HomeComponent */]
     },
     {
-        path: 'Auth0-Angulr2/profile',
+        path: 'profile',
         component: __WEBPACK_IMPORTED_MODULE_2__component_profile_profile_component__["a" /* ProfileComponent */]
     }
 ];
@@ -393,14 +388,14 @@ var environment = {
 /***/ 661:
 /***/ function(module, exports) {
 
-module.exports = ".container {\r\n    padding-top: 1rem;\r\n}\r\nimg{\r\n    width: 100%;\r\n}"
+module.exports = ".container {\r\n    padding-top: 1rem;\r\n}\r\nimg{\r\n    width: 100%;\r\n}\r\na { \r\n    cursor: pointer; \r\n    cursor: hand; \r\n}"
 
 /***/ },
 
 /***/ 662:
 /***/ function(module, exports) {
 
-module.exports = "<nav class=\"navbar navbar-toggleable-md navbar navbar-inverse bg-inverse\">\n      <button class=\"navbar-toggler navbar-toggler-right\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarsExampleDefault\" aria-controls=\"navbarsExampleDefault\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\n        <span class=\"navbar-toggler-icon\"></span>\n      </button>\n      <a class=\"navbar-brand\" href=\"#\">Angular Auth App</a>\n\n      <div class=\"collapse navbar-collapse\" id=\"navbarsExampleDefault\">\n        <ul class=\"navbar-nav mr-auto\">\n          <li class=\"nav-item active\">\n            <a class=\"nav-link\" [routerLink]=\"['/Auth0-Angulr2']\">Home <span class=\"sr-only\">(current)</span></a>\n          </li> \n        </ul>\n        <ul class=\"navbar-nav mr-right\">\n            <li class=\"nav-item\">\n              <a class=\"nav-link\" (click)=\"auth.login()\" *ngIf=\"!auth.authenticated()\" >Log In</a>\n            </li>\n            <li class=\"nav-item\">\n                <a  class=\"nav-link\" [routerLink]=\"['Auth0-Angulr2/profile']\" *ngIf=\"auth.authenticated()\" >Profile</a>   \n            </li>\n            <li class=\"nav-item\">\n              <a class=\"nav-link\" href=\"#\" (click)=\"auth.logout()\" *ngIf=\"auth.authenticated()\" >Logout</a>\n            </li>\n        </ul>\n      </div>\n    </nav>\n\n    <div class=\"container\">\n        <router-outlet></router-outlet>\n    </div><!-- /.container -->"
+module.exports = "<nav class=\"navbar navbar-toggleable-md navbar navbar-inverse bg-inverse\">\n      <button class=\"navbar-toggler navbar-toggler-right\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarsExampleDefault\" aria-controls=\"navbarsExampleDefault\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\n        <span class=\"navbar-toggler-icon\"></span>\n      </button>\n      <a class=\"navbar-brand\" href=\"#\">Angular Auth App</a>\n\n      <div class=\"collapse navbar-collapse\" id=\"navbarsExampleDefault\">\n        <ul class=\"navbar-nav mr-auto\">\n          <li class=\"nav-item active\">\n            <a class=\"nav-link\" [routerLink]=\"['/']\">Home <span class=\"sr-only\">(current)</span></a>\n          </li> \n        </ul>\n        <ul class=\"navbar-nav mr-right\">\n            <li class=\"nav-item\">\n              <a class=\"nav-link\" (click)=\"auth.login()\" *ngIf=\"!auth.authenticated()\" >Log In</a>\n            </li>\n            <li class=\"nav-item\">\n                <a  class=\"nav-link\" [routerLink]=\"['/profile']\" *ngIf=\"auth.authenticated()\" >Profile</a>   \n            </li>\n            <li class=\"nav-item\">\n              <a class=\"nav-link\" (click)=\"auth.logout()\" *ngIf=\"auth.authenticated()\" >Logout</a>\n            </li>\n        </ul>\n      </div>\n    </nav>\n\n    <div class=\"container\">\n        <router-outlet></router-outlet>\n    </div><!-- /.container -->"
 
 /***/ },
 
